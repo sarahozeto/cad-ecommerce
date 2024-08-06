@@ -9,7 +9,7 @@
 
 
 # Cadadastro de Ecommerce - Introdução
-![cadastro de produtos](img/cadastrodeprodutos.gif)
+![cadastro de produtos](img/cadastrodeprodutos.gif)<br>
 Neste projeto foi utilizado os recurso do Mysql em conjunto com a linguagem PHP para desenvolver o banco de dados de um site que simula um carrinho de compras online, na qual é possível cadastrar novos produtos, marcas ou categorias para adicionar ao carrinho.
 
 **O que é o Mysql?** <br>
