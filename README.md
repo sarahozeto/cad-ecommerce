@@ -9,9 +9,10 @@
 
 
 # Cadadastro de Ecommerce - Introdução
+![cadastro de produtos](img/cadastrodeprodutos.gif)
 Neste projeto foi utilizado os recurso do Mysql em conjunto com a linguagem PHP para desenvolver o banco de dados de um site que simula um carrinho de compras online, na qual é possível cadastrar novos produtos, marcas ou categorias para adicionar ao carrinho.
 
-**O que é o Mysql?**
+**O que é o Mysql?** <br>
 MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto que utiliza a linguagem SQL (Structured Query Language) para gerenciar e manipular dados. Ele é amplamente utilizado em desenvolvimento web e aplicativos empresariais devido à sua confiabilidade, desempenho e facilidade de uso. MySQL é útil para armazenar, organizar e recuperar grandes volumes de dados, facilitando operações como consultas, inserções, atualizações e exclusões de dados em bancos de dados.
 
 ## Tecnologias utilizadas
