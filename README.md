@@ -3,9 +3,9 @@
 
 # INDÍCE
 [Cadastro de Ecommerce - Introdução](#cadadastro-de-ecommerce---introdu%C3%A7%C3%A3o)<br>
-[Tecnologias utilizadas](#tecnologias-utilizadas) 
-[Funcionalidades](#funcionalidades)   
-[Considerações finais](#considera%C3%A7%C3%B5es-finais)  
+[Tecnologias utilizadas](#tecnologias-utilizadas) <br>
+[Funcionalidades](#funcionalidades) <br>
+[Considerações finais](#considera%C3%A7%C3%B5es-finais)  <br>
 
 
 # Cadadastro de Ecommerce - Introdução
