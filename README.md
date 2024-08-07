@@ -29,17 +29,17 @@ Neste projetos tivemos o uso de:
 Para o site funcionar de forma devida e correta, trabalhamos com os seguintes recursos:
 
 ### Incluindo o arquivo de conexão
-![include('controller/conexao.php');]() <br>
+![include('controller/conexao.php');](img/include.png) <br>
 O comando **include** permite a inclusão de um arquivo em outro arquivo PHP. No código o arquivo **conexao.php** estabelece uma conexão com o banco de dados MySQL utilizando o usuário root, acessando o banco de dados chamado 'compra'. Depois de estabelcer a conexão com banco, ele configura o conjunto de caracteres. Se houver algum erro, o código é interrompido.
  
-![conexao.php]()
+![conexao.php](img/conexao.png)
 
 ### Captura do dado enviado
-![$descricao = $_POST['descricao'];]()<br>
+![$descricao = $_POST['descricao'];](img/descricao.png)<br>
 O valor do campo descricao enviado através de um formulário HTML via método POST é capturado e armazenado na variável **$descricao**.
 
 ### Criação da query SQL
-![$cad_categoria = "INSERT INTO categoria(DESCRICAO) VALUES ('$descricao')";]()<br>
+![$cad_categoria = "INSERT INTO categoria(DESCRICAO) VALUES ('$descricao')";](img/criacaoquery.png)<br>
 Nessa parte é criada uma query para inserir uma nova linha nas tabelas, definindo o campo **DESCRICAO** com o valor da variável com o mesmo nome, **$descricao**.
 
 ### Execução da query e verificação
@@ -47,7 +47,7 @@ Nessa parte é criada uma query para inserir uma nova linha nas tabelas, definin
 Neste bloco, executamos a query usando a função **mysqli_query()**. Se a execução for bem-sucedida, é exibida uma mensagem indicando o bom processo, caso contrário, é exibida uma mensagem de erro contendo a query que falhou.
 
 ### Fechamento da conexão
-![mysqli_close($mysqli);]()<br>
+![mysqli_close($mysqli);](img/fechamentoconexao.png)<br>
 Por fim, encerramos a conexão com o banco de dados.
 
 ### Banco de dados
