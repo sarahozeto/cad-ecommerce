@@ -43,11 +43,11 @@ O valor do campo descricao enviado através de um formulário HTML via método P
 Nessa parte é criada uma query para inserir uma nova linha nas tabelas, definindo o campo **DESCRICAO** com o valor da variável com o mesmo nome, **$descricao**.
 
 ### Execução da query e verificação
-![]()<br>
+![](img/fechamentoconexao.png)<br>
 Neste bloco, executamos a query usando a função **mysqli_query()**. Se a execução for bem-sucedida, é exibida uma mensagem indicando o bom processo, caso contrário, é exibida uma mensagem de erro contendo a query que falhou.
 
 ### Fechamento da conexão
-![mysqli_close($mysqli);](img/fechamentoconexao.png)<br>
+![mysqli_close($mysqli);](img/closephp.png)<br>
 Por fim, encerramos a conexão com o banco de dados.
 
 ### Banco de dados
