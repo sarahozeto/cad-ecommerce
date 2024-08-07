@@ -28,14 +28,30 @@ Neste projetos tivemos o uso de:
 ## Funcionalidades
 Para o site funcionar de forma devida e correta, trabalhamos com os seguintes recursos:
 
-### Cadastrar 
-![produtos](img/produtos.png)
-O código PHP acima recebe uma descrição enviada de um formulário HTML, exibe essa descrição, insere-a na tabela categoria do banco de dados MySQL e, em seguida, informa ao usuário se a inserção foi bem-sucedida ou se ocorreu algum erro. Finalmente, ele fecha a conexão com o banco de dados. No entanto, utilizamos este mesmo formato para construir o código do cadastro de marca e produtos.
+### Incluindo o arquivo de conexão
+![include('controller/conexao.php');]() <br>
+O comando **include** permite a inclusão de um arquivo em outro arquivo PHP. No código o arquivo **conexao.php** estabelece uma conexão com o banco de dados MySQL utilizando o usuário root, acessando o banco de dados chamado 'compra'. Depois de estabelcer a conexão com banco, ele configura o conjunto de caracteres. Se houver algum erro, o código é interrompido.
+ 
+![conexao.php]()
+
+### Captura do dado enviado
+![$descricao = $_POST['descricao'];]()<br>
+O valor do campo descricao enviado através de um formulário HTML via método POST é capturado e armazenado na variável **$descricao**.
+
+### Criação da query SQL
+![$cad_categoria = "INSERT INTO categoria(DESCRICAO) VALUES ('$descricao')";]()<br>
+Nessa parte é criada uma query para inserir uma nova linha nas tabelas, definindo o campo **DESCRICAO** com o valor da variável com o mesmo nome, **$descricao**.
+
+### Execução da query e verificação
+![]()<br>
+Neste bloco, executamos a query usando a função **mysqli_query()**. Se a execução for bem-sucedida, é exibida uma mensagem indicando o bom processo, caso contrário, é exibida uma mensagem de erro contendo a query que falhou.
+
+### Fechamento da conexão
+![mysqli_close($mysqli);]()<br>
+Por fim, encerramos a conexão com o banco de dados.
 
 ### Banco de dados
 ![banco de dados](img/bancodedados.png)
-A linha **include('controller/conexao.php');** no código principal serve para importar o script de conexão com o banco de dados **(conexao.php)**. Isso estabelece a conexão com o banco de dados e define o conjunto de caracteres. Depois, essa conexão é utilizada para executar operações no banco de dados, como a inserção de uma nova marca ou produto.
-
 
 ## Considerações finais
 Por enquanto o projeto ainda se encontra em desenvolvimento, logo, ele está incompleto e sujeito a alterações.
